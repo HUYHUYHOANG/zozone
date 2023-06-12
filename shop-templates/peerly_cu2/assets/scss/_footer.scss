@@ -1,0 +1,244 @@
+/*--
+/*  07. Footer CSS
+/*----------------------------------------*/
+
+// Footer Section
+.footer-section {
+    background-color: #fff9f5;
+    position: relative;
+    z-index: 1;
+
+    &::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-image: url(../images/footer-overlay.webp);
+        background-position: center center;
+        background-size: cover;
+        opacity: 0.05;
+    }
+}
+
+// Footer Top
+.footer-top{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding-top: 110px;
+    padding-bottom: 100px;
+    // Responsive
+    @media #{$desktop-device} {
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+    @media #{$tablet-device} {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+    @media #{$large-mobile} {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    & .shape-1{
+        position: absolute;
+        top: -22px;
+        left: 65px;
+        z-index: -1;
+        opacity: 0.5;
+
+        @media #{$desktop-device, $tablet-device, $large-mobile} {
+            width: 150px;
+            left: 35px;
+        }        
+    }
+    & .shape-2{
+        position: absolute;
+        bottom: -22px;
+        left: 65px;
+        z-index: -1;
+
+        @media #{$desktop-device, $tablet-device, $large-mobile} {
+            width: 150px;
+            left: 35px;
+        }
+
+        @media #{$small-mobile}{
+            display: none;
+        }
+    }
+    & .shape-3{
+        position: absolute;
+        bottom: -46px;
+        right: 35px;
+        z-index: -1;
+
+        @media #{$desktop-device, $tablet-device, $large-mobile} {
+            width: 300px;
+            bottom: -25px;
+        }
+    }
+}
+
+// Newsletter Wrapper
+.newsletter-wrapper{
+    & .logo{}
+    & .title{
+        font-size: 28px;
+        font-weight: 600;
+        color: $primary;
+        margin-top: 40px;
+    }
+    & p{
+        font-size: 20px;
+        font-weight: 500;
+        color: $heading-color;
+        margin-top: 5px;
+    }
+    & .newsletter-form{
+        max-width: 470px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 25px;
+        z-index: 1;
+        background-color: $primary;
+        border-radius: 50px;
+
+        &::before{
+            position: absolute;
+            content: '';
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+            left: 5px;
+            border-radius: 50px;
+            border: 1px solid #fdd9d4;
+            transition: all 0.3s ease 0s;
+            z-index: -1;
+        }
+
+        & input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]){
+            border-radius: 50px;
+            height: 60px;
+            padding: 0 30px;
+            padding-right: 100px;
+            font-weight: 700;
+            color: $white;
+            background-color: transparent;
+        }
+        & .btn{
+            position: absolute;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            letter-spacing: 0;
+            color: $primary;
+            top: 10px;
+            right: 10px;
+            padding: 0 20px;
+            font-weight: 500;
+
+            &::before{
+                display: none;
+            }
+
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}
+
+
+// Footer Copyright
+.footer-copyright {
+    padding: 10px 0 20px;
+    background-color: #fea797;
+}
+
+// Copyright Wrapper
+.copyright-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media #{$large-mobile}{
+        display: block;
+        text-align: center;
+    }
+}
+
+// Copyright text
+.copyright-text{
+    padding-top: 10px;
+    
+    & p{
+        font-size: 14px;
+        letter-spacing: 1px;
+
+        & a{
+            &:hover{
+                color: $white;
+            }
+        }
+        & i{
+            color: $white;
+        }
+    }
+}
+
+// Copyright text
+.payment-method{
+    padding-top: 10px;
+
+    & .payment-icon{
+        display: flex;
+        flex-wrap: wrap;
+
+        @media #{$large-mobile}{
+            justify-content: center;
+        }        
+
+        & li{
+            margin-right: 25px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// Back To Top 
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    z-index: 99;
+    text-align: center;
+    // display: none;
+    box-shadow: 2px 4px 8px rgba(52, 58, 64, 0.15);
+    transition: all 0.3s linear;
+    color: $white;
+    background-color: $dark;
+    border: 0;
+
+    &:focus,
+    &:hover {
+      color: $white;
+      background-color: $primary;
+    }
+}
+  
+  
+  

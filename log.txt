@@ -1,0 +1,73 @@
+
+send Message :Array
+(
+    [action] => order_pending
+    [id] => 1-06012022-0001
+    [title] => order_pending
+    [android_channel_id] => default_notification_channel_id
+    [date_time] => 2022-01-06 12:23:20
+)
+ at 06-01-2022 12:23:20pm; Response:{"multicast_id":6903421437074970040,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
+send Message :Array
+(
+    [action] => order_pending
+    [id] => 1-06012022-0002
+    [title] => order_pending
+    [android_channel_id] => default_notification_channel_id
+    [date_time] => 2022-01-06 12:25:08
+)
+ at 06-01-2022 12:25:08pm; Response:{"multicast_id":7907917513260841198,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
+send Message :Array
+(
+    [action] => order_pending
+    [id] => 1-07012022-0001
+    [title] => order_pending
+    [android_channel_id] => default_notification_channel_id
+    [date_time] => 2022-01-07 10:00:41
+)
+ at 07-01-2022 10:00:41am; Response:{"multicast_id":8457187743821056881,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
+send Message :Array
+(
+    [action] => order_pending
+    [id] => 1-07012022-0001
+    [title] => order_pending
+    [android_channel_id] => default_notification_channel_id
+    [date_time] => 2022-01-07 10:04:05
+)
+ at 07-01-2022 10:04:06am; Response:{"multicast_id":4904056496615447725,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
+send Message :Array
+(
+    [action] => order_pending
+    [id] => 1-07012022-0002
+    [title] => order_pending
+    [android_channel_id] => default_notification_channel_id
+    [date_time] => 2022-01-07 10:05:14
+)
+ at 07-01-2022 10:05:14am; Response:{"multicast_id":3084176562006183846,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
+send Message :Array
+(
+    [action] => order_pending
+    [id] => 1-07012022-0001
+    [title] => order_pending
+    [android_channel_id] => default_notification_channel_id
+    [date_time] => 2022-01-07 10:15:27
+)
+ at 07-01-2022 10:15:27am; Response:{"multicast_id":2476368145755284878,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
+send Message :Array
+(
+    [action] => order_pending
+    [id] => 1-18012022-0001
+    [title] => order_pending
+    [android_channel_id] => default_notification_channel_id
+    [date_time] => 2022-01-18 16:16:25
+)
+ at 18-01-2022 04:16:26pm; Response:{"multicast_id":6013645042136843487,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}
+send Message :Array
+(
+    [action] => order_pending
+    [id] => 1-24012022-0001
+    [title] => order_pending
+    [android_channel_id] => default_notification_channel_id
+    [date_time] => 2022-01-24 13:54:01
+)
+ at 24-01-2022 01:54:02pm; Response:{"multicast_id":2747935176513906313,"success":0,"failure":1,"canonical_ids":0,"results":[{"error":"InvalidRegistration"}]}

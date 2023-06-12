@@ -1,0 +1,8 @@
+/*
+Theme Name: Nail
+Theme URI: https://menu.tnkas.de
+Author: Tnkas
+Version: 1
+Price: Free
+Description: A Beautiful, Professional and Modern Template.
+*/

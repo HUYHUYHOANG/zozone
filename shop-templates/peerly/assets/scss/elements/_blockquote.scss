@@ -1,0 +1,54 @@
+/*--
+/*  2.1 - Blockquote CSS
+/*----------------------------------------*/
+.blockquote {
+    background-color: #fff9f5;
+    position: relative;
+    border: 1px solid $primary;
+    padding: 30px 40px 48px;
+    border-radius: 32px;
+    margin-bottom: 0;
+    overflow: hidden;
+    margin-top: 40px;
+
+    @media #{$small-mobile}{
+        padding: 20px 20px 28px;
+        border-radius: 20px;
+    }
+
+    &::before {
+        position: absolute;
+        bottom: 15px;
+        right: 30px;
+        content: '\efce';
+        font-family: IcoFont;
+        font-size: 46px;
+        line-height: 1;
+        color: $primary;
+
+        @media #{$small-mobile}{
+            font-size: 32px;
+            bottom: 10px;
+            right: 20px;
+        }
+    }	
+    
+    & .shape{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -40px;
+        opacity: 0.2;
+    }
+
+    & p {
+        font-weight: 700;
+        margin-top: 0 !important;
+        font-size: 16px;
+        line-height: 1.75;
+
+        @media #{$small-mobile}{
+            font-size: 15px;
+        }
+    }
+}

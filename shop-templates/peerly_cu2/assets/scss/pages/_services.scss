@@ -1,0 +1,229 @@
+/*--
+/*  4.4 - Services CSS
+/*----------------------------------------*/
+
+// Service Wrapper 
+.services-section{
+    position: relative;
+}
+
+// Service Wrapper 
+.services-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Service Wrapper 
+.services-main-content{
+    width: 53%;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    overflow: hidden;
+    padding: 100px 15px;
+
+    @media #{$extraBig-device}{
+        padding-left: 140px;
+        padding-right: 70px;
+    }
+    @media #{$laptop-device}{
+        padding-left: 80px;
+        padding-right: 40px;
+    }
+    @media #{$tablet-device, $large-mobile}{
+        width: 100%;
+    }
+    @media #{$tablet-device} {
+        padding: 80px 15px;
+    }
+    @media #{$large-mobile} {
+        padding: 50px 15px;
+    }
+
+    & .shape-1{
+        position: absolute;
+        bottom: -60px;
+        left: 30px;
+
+        @media #{$tablet-device, $large-mobile}{
+            width: 100px;
+        }
+    }
+    & .shape-2{
+        position: absolute;
+        top: 80px;
+        right: 0;
+
+        @media #{$tablet-device, $large-mobile}{
+            width: 200px;
+            top: 40px;
+        }
+    }
+    & .shape-3{
+        position: absolute;
+        top: -10px;
+        left: -45px;
+        opacity: 0.38;
+    }
+    & .shape-4{
+        position: absolute;
+        bottom: -30px;
+        left: 30px;
+        width: 340px;
+        opacity: 0.6;
+
+        @media #{$tablet-device, $large-mobile}{
+            width: 240px;
+        }
+    }
+}
+
+
+// Service Wrapper 
+.service-wrapper{
+    padding: 0 90px;
+
+    @media #{$desktop-device}{
+        padding: 0 40px;
+    }
+    @media #{$tablet-device, $large-mobile}{
+        padding: 0;
+    }
+
+    & .single-services{
+        padding-top: 70px;
+    }
+}
+
+
+// Single Service 
+.single-services{
+    max-width: 245px;
+    margin: 0 auto;
+
+    & .services-image{
+        position: relative;
+
+        & a{
+            display: block;            
+
+            & img{
+                width: 100%;
+            }
+        }
+        & .price{
+            border-radius: 50%;
+            background-color: $primary;
+            box-shadow: 0px 21px 32px 0px rgba(0, 0, 0, 0.13);
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            font-size: 22px;
+            font-weight: 800;
+            font-family: $heading-font;
+            color: $white;
+            display: block;    
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+
+            @media #{$small-mobile}{
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                font-size: 18px;
+            }
+        }
+    }
+    & .services-content{
+        margin: 15px auto 0;
+
+        & .title{
+            & a{
+                font-size: 28px;
+                font-weight: 700;
+                color: $primary;
+                line-height: 1.2;
+                letter-spacing: 1px;
+
+                @media #{$small-mobile}{
+                    font-size: 20px;
+                }
+
+                &:hover{
+                    color: $dark;
+                }
+            }
+        }
+        & p{
+            max-width: 210px;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+// Services Active 
+.services-active{
+    padding-top: 50px;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    & .swiper-container{
+        padding: 0 20px;
+    }
+
+    & .swiper-pagination{
+        position: relative;
+        bottom: 0;
+        margin-top: 35px;
+
+        & .swiper-pagination-bullet {
+            width: 16px;
+            height: 16px;
+            background-color: transparent;
+            opacity: 1;            
+            transition: $transition-default;
+            background-image: url(../images/dots-1.svg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            &.swiper-pagination-bullet-active{
+                background-image: url(../images/dots-2.svg);
+            }
+        }
+    }
+}
+
+
+// Services Active 
+.services-background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 47%;
+    height: 100%;
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+
+    @media #{$tablet-device, $large-mobile}{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

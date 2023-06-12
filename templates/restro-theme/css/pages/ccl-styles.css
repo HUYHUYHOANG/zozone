@@ -1,0 +1,63 @@
+body{font-family: Barlow Semi Condensed,nunito, helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;}
+a.button:hover{color:#FFF; text-decoration: none;}
+.right-toolbox a.button{margin-left:4px;}
+
+.ccl-data-wrap{margin-left:15px;}
+.mfp-bg{background: rgba(1,1,1,0.7);}
+.form-group.row{margin:0;padding:0;}
+.control-label{margin-top:12px;}
+
+.bootstrap-datetimepicker-widget ul{list-style-type: none;margin:0;padding:0;}
+.bootstrap-datetimepicker-widget th.prev{}
+.bootstrap-datetimepicker-widget th.prev i,
+.bootstrap-datetimepicker-widget th.next i{
+    width: 40px;height:40px;position: relative;left:0;border-radius: 4px;
+}
+textarea,.bootstrap-select.btn-group .dropdown-toggle .filter-option{font-weight: 400;}
+textarea{overflow: hidden;resize:none;}
+
+.swal-icon{width: 40px;height:40px;}
+.swal-icon--warning__body{height: 17px;top:6px;}
+.swal-button, .swal-button:hover{
+    background-color: var(--classic-color-1) !important;
+    color:#FFF;
+}
+.swal-button:hover{opacity: .8;}
+
+#customr-care-logs thead th{border-top:0;border-bottom: 0;}
+#customr-care-logs tbody td{vertical-align: middle;}    
+#customr-care-logs tbody tr.ccl-row-group td{background: #EEE !important;font-weight: 600;}
+
+.ccl-sp-contact-name{text-transform: capitalize;}
+.ccl-sp-contact-name i{position: relative;top:2px;margin-right: 10px;}
+.ccl-action-button-wrap{float:right;white-space:nowrap}
+.ccl-action-button-wrap > a{margin-right:4px;}
+a.log-item-state{min-width:80px;padding:0 !important;}
+
+.bootstrap-select{     
+    display: inline-block;        
+}
+
+/*popup form styles */
+ul.ccl-service-list, div.form-control{
+    list-style-type: none;
+    padding:16px;
+    font-size: 16px;
+    color: gray;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #fff;
+    font-weight: 400;
+    opacity: 1;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 12%);
+    margin: 0 0 16px;
+}
+.readonly{
+    background:#fafafa !important;
+}
+button.disabled, button.disabled:hover{background:gray;color:#000;}
+button.disabled:hover{cursor:default;}

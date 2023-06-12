@@ -1,0 +1,8 @@
+@media screen and (max-width: 600px) {
+table.basic-table {border: 0 }
+table.basic-table th {display: none }
+table.basic-table tr {display: block;margin-bottom: 0 }
+table.basic-table td {border-bottom: 1px solid #ddd;display: block;font-size: 14px;text-align: right }
+table.basic-table td:before {content: attr(data-label);float: left;font-weight: 600 }
+table.basic-table td:last-child {border-bottom: 0 }
+} 

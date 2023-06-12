@@ -1,0 +1,143 @@
+/*--
+/*  4.11 - Page Banner CSS
+/*----------------------------------------*/
+
+// Page Banner 
+.page-banner {
+    height: 650px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #040205;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 45px;
+
+    @media #{$desktop-device}{
+        height: 550px;
+    }
+    @media #{$tablet-device}{
+        height: 450px;
+    }
+    @media #{$large-mobile}{
+        height: 400px;
+    }
+
+    & .page-social{
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        width: 100%;
+
+        & .social{
+            display: flex;
+            flex-wrap: wrap;          
+            z-index: 1;
+            padding-left: 70px;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 70px;
+                height: 2px;
+                background-color: $primary;
+            }
+
+            & li{
+                padding-left: 25px;
+
+                & a{
+                    font-size: 22px;
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+// Page Breadcrumb
+.page-banner-content{    
+
+    & .title{
+        font-size: 80px;
+        font-weight: 700;
+        color: $primary;
+        line-height: 1.16;
+
+        @media #{$desktop-device}{
+            font-size: 70px;
+        }
+        @media #{$tablet-device}{
+            font-size: 60px;
+        }
+        @media #{$large-mobile}{
+            font-size: 42px;
+        }
+        @media #{$small-mobile}{
+            font-size: 36px;
+        }
+    }
+    & p{
+        font-size: 16px;
+        color: #fdd9d4;
+        margin-top: 15px;
+        max-width: 400px;
+    }
+    & .breadcrumb{
+        margin-top: 15px;
+
+        & li{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $heading-font;
+            color: #fdd9d4;
+            position: relative;
+
+            & + li{
+                &::before{
+                    content: '-';
+                    margin: 0 15px;
+                }
+            }            
+
+            & a{
+
+            }
+        }
+    }
+}
+
+
+// Page Breadcrumb
+.page-breadcrumb {
+    color: $primary;
+    font-size: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & li {
+        & + li {
+            &::before {
+                content: "\f105";
+                font-family: $fontawesome;
+                margin: 0 10px;
+            }
+        }
+        & a {}
+    }
+    // Responsive
+    @media #{$large-mobile} {
+        font-size: 16px;
+    }
+    @media #{$small-mobile} {
+        font-size: 14px;
+    }
+}

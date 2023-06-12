@@ -1,0 +1,116 @@
+/*--
+/*  4.7 - Call To Action CSS
+/*----------------------------------------*/
+
+// Call To Action Section
+.call-to-action-serction{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff9f5;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;    
+}
+
+// Call To Action Section
+.call-to-action-bg{
+    width: 50%;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+
+    @media #{$tablet-device, $large-mobile}{
+        display: none;
+    }
+}
+
+// Call To Action Section
+.call-to-action-content{
+    width: 50%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media #{$tablet-device, $large-mobile}{
+        width: 100%;
+    }
+
+    & .shape-1{
+        position: absolute;
+        left: -60px;
+        top: -45px;
+        z-index: -1;
+        opacity: 0.59;
+
+        @media #{$desktop-device, $tablet-device, $large-mobile}{
+            width: 150px;
+        }
+    }
+    & .shape-2{
+        position: absolute;
+        right: -50px;
+        top: -7px;
+        z-index: -1;
+        opacity: 0.38;
+
+        @media #{$desktop-device, $tablet-device, $large-mobile}{
+            width: 120px;
+            right: -40px;
+        }
+    }
+    & .shape-3{
+        position: absolute;
+        left: 22px;
+        bottom: 40px;
+        z-index: -1;
+
+        @media #{$desktop-device, $tablet-device, $large-mobile}{
+            width: 140px;
+            bottom: 20px;
+        }        
+        @media #{$small-mobile}{
+            display: none;
+        }
+    }
+    & .shape-4{
+        position: absolute;
+        right: -40px;
+        bottom: -65px;
+        z-index: -1;
+        opacity: 0.59;
+
+        @media #{$desktop-device, $tablet-device, $large-mobile}{
+            width: 220px;
+            bottom: -25px;
+            right: -20px;
+        }
+    }
+}
+
+// Call To Action Wrapper
+.call-to-action-wrapper{
+    & .section-title{}
+    & .discount{
+        font-size: 28px;
+        font-weight: 700;
+        color: $primary;
+        line-height: 1.2;
+        margin-top: 20px;
+        letter-spacing: 1px;
+
+        @media #{$small-mobile}{
+            font-size: 22px;
+        }
+    }
+    & .btn{
+        margin-top: 44px;
+
+        @media #{$extraBig-device, $laptop-device, $desktop-device}{
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+    }
+}

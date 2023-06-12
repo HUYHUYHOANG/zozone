@@ -1,0 +1,194 @@
+/*--
+/*  4.14 - Hot Ston Spa CSS
+/*----------------------------------------*/
+
+
+// Hot Ston Spa Wrapper
+.hot-ston-spa-wrapper{
+    margin-top: -50px;
+}
+
+// Hot Ston Spa Image
+.hot-ston-spa-image{
+    position: relative;
+    margin-top: 50px;
+    max-width: 560px;
+
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/about-shape.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    & img{
+        width: 100%;
+    }
+
+    &.spa-image-overlay{
+        &::before{
+            background-image: url(../images/about-shape-2.webp);
+        }
+    }
+    &.spa-image-overlay-02{
+        &::before{
+            background-image: url(../images/about-shape-3.webp);
+        }
+    }
+}
+
+// Hot Ston Spa Image
+.hot-ston-spa-content{
+
+    @media #{$extraBig-device, $laptop-device}{
+        padding-left: 30px;
+    }
+
+    & p{
+        margin-top: 17px;
+    }
+    & .text{
+        font-size: 20px;
+        font-weight: 700;
+        color: $heading-color;
+        max-width: 430px;
+        margin-top: 20px;
+    }
+
+    & ul{
+        & li{
+            margin-top: 30px;
+            padding-left: 35px;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: '';
+                top: 4px;
+                left: 0px;
+                width: 20px;
+                height: 20px;
+                background-image: url(../images/dots.webp);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    & .btn{
+        margin-top: 42px;
+    }
+}
+
+// Spa Navigation Wrapper 
+.spa-navigation-wrapper{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    border-radius: 42px;
+    border: 1px solid $primary;
+    z-index: 1;
+    padding: 25px 40px 40px;
+    margin-top: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media #{$tablet-device}{
+        padding: 15px 30px 30px;
+    }
+    @media #{$large-mobile}{
+        padding: 10px 25px 25px;
+        border-radius: 20px;
+        margin-top: 50px;
+    }
+    @media #{$small-mobile}{
+        padding: 5px 20px 15px;
+        border-radius: 15px;
+    }
+
+    &::before {
+        background-color: #fff9f5;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        opacity: 0.75;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+      
+
+    & a{
+        font-size: 20px;
+        font-family: $heading-font;
+        font-weight: 700;
+        color: $black;
+        margin-top: 10px;
+        position: relative;
+
+        @media #{$large-mobile}{
+            font-size: 18px;
+        }
+        @media #{$small-mobile}{
+            font-size: 15px;
+        }
+
+        &::before{
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 1px;
+            background-color: $black;
+            left: 0;
+            bottom: 5px;
+            transition: $transition-default;
+        }
+        
+        &:hover{
+            color: $primary;
+            
+            &::before{
+                width: 100%;
+                background-color: $primary;
+            }
+        }
+    }
+    & .prview{}
+    & .next{}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

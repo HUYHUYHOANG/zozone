@@ -1,0 +1,302 @@
+/*--
+/*  4.23 - Cart CSS
+/*----------------------------------------*/
+
+// cart Table 
+.cart-table{
+    & .table{
+        margin-bottom: 0;   
+        & thead{
+            & tr{
+                & th{
+                    background-color: rgba($primary, 0.1);
+                    border: 1px solid transparent;
+                    border-bottom: 0;
+                    padding: 10px 20px;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 700;
+                    font-family: $heading-font;
+                    white-space: nowrap;
+                    color: $dark;
+
+                    &.product-thumb{
+                        min-width: 150px;
+                        width: 150px;
+                    }
+                    &.product-info{
+                        min-width: 330px;
+                        text-align: left;
+                    }
+                    &.product-quantity{
+                        min-width: 120px;
+                    }
+                    &.product-total-price{
+                        min-width: 90px;
+                    }
+                    &.product-add-cart{
+                        min-width: 120px;
+                    }
+                    &.product-action{
+                        min-width: 50px;
+                    }
+                }
+            }
+        }
+        & tbody{
+            & tr{
+                & td{
+                    border: 1px solid rgba($primary, 0.1);
+                    padding: 20px 20px;
+                    vertical-align: middle;
+
+                    &.Product-thumb{
+                        text-align: center;
+
+                        & img{
+
+                        }
+                    }
+                    &.product-info{
+                        & .name{
+                            & a {
+                                text-decoration: none;
+                                font-weight: 600;
+                                line-height: 1;
+                                color: $body-color;
+                                font-size: 18px;
+                                text-transform: capitalize;
+                                transition: all 0.3s linear;
+
+                                &:hover{
+                                    color: $primary;
+                                }
+                            }
+                        }
+                        & .product-prices{
+                            margin-top: 10px;
+                    
+                            & .regular-price{
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: #c0bfbf;
+                                text-decoration: line-through;
+                                margin-right: 8px;
+                            }
+                            & .sale-price{
+                                margin-right: 8px;
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: $body-color;
+                            }
+                            & .discount-percentage{
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 26px;
+                                color: $white;
+                                padding: 0 10px 0 10px;
+                                background: $body-color;
+                                vertical-align: 5px;
+                                border-radius: 3px;
+                                text-transform: capitalize;        
+                                display: inline-block;    
+                            }
+                        }
+                        & .product-size-color{
+                            & p{
+                                font-size: 16px;
+                                font-weight: 500;
+                                margin-top: 5px;
+                                color: #909296;
+                            }
+                        }
+                    }
+                    &.product-quantity{
+                        text-align: center;
+                    }
+                    &.product-total-price{
+                        text-align: center;
+                        & .price{
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: $body-color;
+                        }
+                    }
+                    &.product-add-cart{
+                       text-align: center;
+                    }
+                    &.product-add-cart{
+                        & .btn{    
+                            @media #{$extraBig-device, $laptop-device}{
+                                height: 50px;
+                                line-height: 50px;
+                                padding: 0 30px;
+                            }
+                        }
+                    }
+                    &.product-action{
+                        text-align: center;
+
+                        & .remove{
+                            font-size: 20px;
+                            border: 0;
+                            background: none;
+                            padding: 0;
+
+                            &:hover{
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Cart btn 
+.cart-btn{
+    border: 1px solid rgba($primary, 0.1);
+    padding: 10px 20px 20px;
+    border-top: 0;
+
+    @media #{$small-mobile}{
+        padding: 10px 10px 20px;
+    }
+
+    & .btn{
+        margin-top: 10px;
+        margin-right: 10px;
+
+        @media #{$extraBig-device, $laptop-device}{
+            height: 50px;
+            line-height: 50px;
+            padding: 0 25px;
+        }
+
+        @media #{$small-mobile}{
+            margin-right: 5px;
+        }
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+// Cart Shipping 
+.cart-shipping,
+.cart-totals{
+    margin-top: 48px;
+}
+
+// Cart Title 
+.cart-title{
+    & .title{
+        color: $dark;
+        font-size: 24px;
+        text-transform: none;
+        margin-bottom: 15px;
+
+        @media #{$small-mobile}{
+            font-size: 20px;
+        }
+    }
+    & p{}
+}
+
+
+// Cart Totals 
+.cart-form{
+    & .single-form{
+        & .btn{    
+            @media #{$extraBig-device, $laptop-device}{
+                height: 50px;
+                line-height: 50px;
+                padding: 0 30px;
+            }
+        }
+    }
+}
+
+
+// Cart Totals 
+.cart-totals{
+    & .cart-total-table{
+        background-color: $grey;
+        padding: 10px 25px;
+        margin-bottom: 30px;
+        
+        & .table{
+            margin-bottom: 0;
+
+            & tbody{
+                & tr{
+                    & td{
+                        padding: 5px 0;
+                        border-top: 0;
+                        border-color: rgba($primary, 0.1);
+                    }
+                    &:last-child{
+                        & td{
+                            border-bottom: 1px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .shipping-list{
+            & li{
+                & + li{
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        & .value,
+        & .price{
+            font-size: 15px;
+            font: 400px;
+            color: $black;
+        }
+        & .value{
+            text-transform: capitalize;
+        }        
+    }
+    & .btn{    
+        @media #{$extraBig-device, $laptop-device}{
+            height: 50px;
+            line-height: 50px;
+            padding: 0 30px;
+        }
+    }
+}
+
+
+// Empty Cart
+.empty-cart{
+    & .empty-cart-title{        
+        color: $heading-color;
+        font-size: 38px;
+        margin-top: -10px;
+
+        @media #{$large-mobile}{
+            font-size: 24px;
+        }
+    }
+    & .empty-cart-img{
+        width: 110px;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+    & p{
+        font-size: 16px;
+        text-transform: capitalize;
+        margin-top: 30px;
+        color: $dark;
+    }
+    & .btn{
+        margin-top: 20px;
+    }
+}

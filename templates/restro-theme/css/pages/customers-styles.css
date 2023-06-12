@@ -1,0 +1,137 @@
+
+.right-toolbox a.button{margin-left:4px;}
+.right-toolbox a.button.disabled{background:#FAFAFA;color:#000 !important;cursor: default;}
+
+.ccl-data-wrap{margin-left:15px;}
+.mfp-bg{background: rgba(1,1,1,0.7);}
+.form-group.row{margin:0;padding:0;}
+.control-label{margin-top:12px;}
+
+.bootstrap-datetimepicker-widget ul{list-style-type: none;margin:0;padding:0;}
+.bootstrap-datetimepicker-widget th.prev{}
+.bootstrap-datetimepicker-widget th.prev i,
+.bootstrap-datetimepicker-widget th.next i{
+    width: 40px;height:40px;position: relative;left:0;border-radius: 4px;
+}
+textarea,.bootstrap-select.btn-group .dropdown-toggle .filter-option{font-weight: 400;}
+textarea{overflow: hidden;resize:none;}
+
+.swal-icon{width: 40px;height:40px;}
+.swal-icon--warning__body{height: 17px;top:6px;}
+.swal-button, .swal-button:hover{
+    background-color: var(--classic-color-1) !important;
+    color:#FFF;
+}
+.swal-button:hover{opacity: .8;}
+
+#customr-care-logs thead th{border-top:0;border-bottom: 0;}
+#customr-care-logs tbody td{vertical-align: middle;}    
+#customr-care-logs tbody tr.ccl-row-group td{background: #EEE !important;font-weight: 600;}
+
+.ccl-sp-contact-name{text-transform: capitalize;}
+.ccl-sp-contact-name i{position: relative;top:2px;margin-right: 10px;}
+.ccl-action-button-wrap{float:right;}
+.ccl-action-button-wrap > a{margin-right:4px;}
+a.log-item-state{min-width:80px;padding:0 !important;}
+
+.bootstrap-select{     
+    display: inline-block;        
+}
+
+/*popup form styles */
+ul.ccl-service-list, div.form-control{
+    list-style-type: none;
+    padding:16px;
+    font-size: 16px;
+    color: gray;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #fff;
+    font-weight: 400;
+    opacity: 1;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 12%);
+    margin: 0 0 16px;
+}
+.readonly{
+    background:#fafafa !important;
+}
+button.disabled, button.disabled:hover{background:gray !important;color:#000;}
+button.disabled:hover{cursor:default;}
+
+.table thead th{background:#EEE !important;vertical-align: middle;}
+.table td{vertical-align: middle;}
+.table td a.button {margin:0}
+
+/*group dialog*/
+.divider{height:15px;}
+input.number{text-align: right;}
+.switch-container{padding: 15px 0 15px 10px;}
+.switch-container label.switch{display: block !important;min-width:30px;min-height: 30px;}
+.dropdown-menu.inner span .text-muted{position: absolute;right:30px;opacity:1;font-size:16px;font-weight: bold;}
+.dropdown-menu.inner span .text-muted i{font-weight: normal;position: absolute;right:30px;top:4px;}
+input[type="checkbox"].unchecked + .switch-button-right {background-color:#ccc !important;}
+input[type="checkbox"].unchecked + .switch-button-right:before{transform: translateX(0);}
+
+.right-cmds{position: relative;top:-10px}
+.right-cmds .button{float:right;margin-left:6px;}
+
+input[type=radio] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    -moz-appearance: none;
+            appearance: none;
+    /* For iOS < 15 */
+    background-color:#f2f2f2;
+    /* Not removed via appearance */
+    margin: 0;
+    font: inherit;
+    color: var(--classic-color-1);
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid var(--classic-color-1);
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+input[type=radio]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--classic-color-1);
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+}
+
+input[type=radio]:checked::before {
+    transform: scale(1);
+}
+
+input[type=radio]:focus {
+    outline: max(2px, 0.15em) solid var(--classic-color-1);
+    outline-offset: max(2px, 0.15em);
+}
+
+.form-check-inline.wrap-01{margin-top:5px;}
+input[name="gender"]{margin-left:12px;margin-right: 6px;}
+.form-check-inline.wrap-01 label:first-child input[name="gender"]{margin-left: 0;}
+
+.input-error, .input-error:focus{border:1px solid #F00 !important;border-radius: 4px;}
+
+@media (min-width: 1024px) {
+    .datepicker1{max-width:40% !important;}
+}
+
+@media (max-width: 575px) {
+    .search-voucher-wrap{margin-top:10px;}
+}
+

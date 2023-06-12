@@ -1,0 +1,146 @@
+/*--
+/*  4.15 - Packages CSS
+/*----------------------------------------*/
+
+// Package Wrapper 
+.packages-wrapper{
+    padding-top: 40px;
+
+    & > .active{
+        & .single-package{
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 21px 32px 0px rgba(0, 0, 0, 0.13);
+        }
+    }
+}
+
+
+// Single Package 
+.single-package{
+    border: 1px solid $primary;
+    border-radius: 30px;
+    background-color: rgb(255, 249, 245);
+    padding: 60px 40px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: $transition-default;
+
+    & .shape-1{
+        position: absolute;
+        top: -20px;
+        right: -10px;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        height: 260px;
+        background-image: url(../images/shape/shape-20.webp);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.25;
+
+    }
+      
+    & .package-header{
+        & .title{
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.4;
+            color: $black;
+        }
+        & p{
+            max-width: 200px;
+            font-size: 14px;
+            margin: 5px auto 0;
+        }
+    }
+    & .package-body{
+        border-top: 1px solid #ffe9da;
+        border-bottom: 1px solid #ffe9da;
+        margin-top: 20px;
+        padding-top: 5px;
+        padding-bottom: 30px;
+
+        & .package-list{
+            & li{
+                margin-top: 20px;
+                padding-left: 35px;
+                position: relative;
+
+                &::before{
+                    position: absolute;
+                    content: '';
+                    top: 4px;
+                    left: 0px;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../images/dots-2.webp);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                &.active{
+                    &::before{
+                        background-image: url(../images/dots.webp);
+                    }
+                }
+            }
+        }
+    }
+    & .package-footer{
+        padding-top: 2px;
+        
+        & .price{
+            font-size: 14px;
+
+            & strong{
+                font-size: 48px;
+                font-weight: 700;
+                color: $black;
+                line-height: 1.4;
+
+                & sup{
+                    top: -16px;
+                    font-size: 28px;
+                }
+            }
+            & span{
+                width: 55px;
+                display: inline-block;
+                text-align: left;
+                line-height: 1.2;
+                margin-left: 5px;
+            }
+        }
+        & .btn{
+            margin-top: 10px;
+
+            @media #{$extraBig-device, $laptop-device, $desktop-device}{
+                padding: 0 40px;
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

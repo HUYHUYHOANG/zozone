@@ -1,0 +1,278 @@
+/*--
+/*  4.1 - Slider CSS
+/*----------------------------------------*/
+
+// Slider Area 
+.slider-area{}
+
+
+// Single Slider 
+.single-slider{
+    height: 950px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #040205;
+
+    @media #{$desktop-device}{
+        height: 750px;
+    }
+    @media #{$tablet-device}{
+        height: 700px;
+    }
+    @media #{$large-mobile}{
+        height: 600px;
+    }
+    @media #{$small-mobile}{
+        height: 550px;
+    }
+}
+
+
+.slider-content{
+    max-width: 610px;
+    padding-top: 50px;
+
+    & .title{
+        font-size: 80px;
+        font-weight: 700;
+        color: $primary;
+        line-height: 1.16;
+
+        @media #{$desktop-device}{
+            font-size: 70px;
+        }
+        @media #{$tablet-device}{
+            font-size: 60px;
+        }
+        @media #{$large-mobile}{
+            font-size: 50px;
+        }
+        @media #{$small-mobile}{
+            font-size: 38px;
+        }
+    }
+    & .slider-meta{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 50px;
+
+        & li{
+            margin-right: 30px;
+            padding-top: 10px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            & .btn{
+                @media #{$extraBig-device, $laptop-device, $desktop-device}{
+                    padding: 0 40px;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                }
+            }
+            & .video-play{
+                font-size: 20px;
+                font-weight: 700;
+                color: $primary;
+                letter-spacing: 1px;
+
+                @media #{$large-mobile}{
+                    font-size: 16px;
+                }
+                
+                & .icon{
+                    width: 50px;
+                    height: 50px;
+                    line-height: 44px;
+                    border: 3px solid $primary;
+                    border-radius: 50%;
+                    font-size: 16px;
+                    color: $primary;
+                    display: inline-block;
+                    text-align: center;
+                    margin-right: 10px;
+                    transition: $transition-default;
+
+                    @media #{$large-mobile}{
+                        width: 45px;
+                        height: 45px;
+                        line-height: 41px;
+                    }
+                }
+
+                &:hover{
+                    color: $white;
+
+                    & .icon{
+                        border-color: $white;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    & .slider-social{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 70px;
+        position: relative;
+        z-index: 1;
+        padding-left: 70px;
+
+        @media #{$small-mobile}{
+            margin-top: 30px;
+        }
+
+        &::before{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 70px;
+            height: 2px;
+            background-color: $primary;
+        }
+
+        & li{
+            padding-left: 25px;
+
+            & a{
+                font-size: 22px;
+                color: $primary;
+            }
+        }
+    }
+
+    &.content-white{
+        & .title{
+            color: $white;
+        }
+        & .slider-meta{            
+    
+            & li{    
+                & .btn{
+                    padding: 0 40px;
+                }
+                & .video-play{
+                    color: $white;
+                    
+                    & .icon{
+                        border: 3px solid $white;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    
+        & .slider-social{    
+            &::before{
+                background-color: $white;
+            }
+    
+            & li{    
+                & a{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+
+// Animation Style 
+.animation-style-01{
+
+    & .slider-content{
+        opacity: 0;
+    }
+
+    &.swiper-slide-active{
+        & .slider-content{
+            opacity: 1;
+
+            & .title{
+                animation-name: fadeInUpBig;
+                animation-delay: 0.4s;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+            }
+            & .slider-meta{
+                & li{
+                    &:nth-child(1){
+                        animation-name: fadeInUpBig;
+                        animation-delay: 0.8s;
+                        animation-duration: 1s;
+                        animation-fill-mode: both;
+                    }
+                    &:nth-child(2){
+                        animation-name: fadeInUpBig;
+                        animation-delay: 1.1s;
+                        animation-duration: 1s;
+                        animation-fill-mode: both;
+                    }
+                    &:nth-child(3){
+                        animation-name: fadeInUpBig;
+                        animation-delay: 1.5s;
+                        animation-duration: 1s;
+                        animation-fill-mode: both;
+                    }
+                    
+                }
+            }
+            & .slider-social{
+                animation-name: fadeInUpBig;
+                animation-delay: 1.7s;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+            }
+        }
+    }
+}
+
+
+// Slider Active
+.slider-active{
+    & .swiper-pagination{
+        text-align: left;
+        bottom: 60px;
+        left: 70px;
+
+        @media #{$desktop-device, $tablet-device}{
+            bottom: 40px;
+            left: 50px;
+        }
+
+        @media #{$large-mobile}{
+            left: 30px;
+            bottom: 20px;
+        }
+
+        & .swiper-pagination-bullet{
+            outline: none;            
+            background-color: $white;
+            transition: $transition-default;
+            opacity: 1;
+            width: 8px;
+            height: 8px;
+            display: block;
+            position: relative;
+            margin: 8px 0;
+
+            &.swiper-pagination-bullet-active{
+                background-color: $primary;
+
+                &::before{
+                    border-color: $primary;
+                }
+            }
+        }
+    }
+}
+
+

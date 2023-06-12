@@ -1,0 +1,142 @@
+/*--
+/*  3.2 - Offcanvas CSS
+/*----------------------------------------*/
+
+// Offcanvas 
+.offcanvas {
+    width: 300px;
+    background-color: $dark;
+
+    & .logo{
+        & img{
+            width: 130px;
+        }
+    }
+
+    & .close{
+        width: 25px;
+        height: 25px;
+        border: 0;
+        background: none;
+
+        & span{
+            width: 25px;
+            height: 2px;
+            background-color: $primary;
+            position: relative;
+            display: block;
+
+            &:nth-child(1){
+                transform: rotate(-45deg);
+                top: 1px;
+            }
+            &:nth-child(2){
+                transform: rotate(45deg);
+                top: -1px;
+            }
+        }
+    }
+}
+
+
+// Mobile Menu
+.mobile-menu{
+    padding: 0 0 30px;
+
+    & ul{
+        & li{
+            position: relative;
+
+            & a{
+                display: block;
+                width: 100%;
+                background: none;
+                text-align: left;
+                padding: 10px 15px;
+                border: 0;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: $heading-font;
+                color: $primary;
+            }
+
+            & .menu-expand{
+                position: absolute;
+                right: 0px;
+                top: 6px;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                background-color: rgba($white, 0.1);
+                border-radius: 3px;
+
+                // text-align: center;
+                // font-size: 30px;
+                // font-weight: 300;
+                // line-height: 25px;
+                // color: $primary;
+                
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 16px;
+                    height: 1px;
+                    background-color: $primary;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 1px;
+                    height: 16px;
+                    background-color: $primary;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: $transition-default;
+                }
+            }
+
+            &.active{
+                & > .menu-expand{
+                    &::after {
+                        height: 0;
+                    }
+                }
+            }
+
+            ul{
+                border-top: 0;
+                display: none;
+
+                & li{
+                    & a{
+                        padding-left: 12%;
+                    }
+
+                    ul{
+                        & li{
+                            & a{
+                                padding-left: 18%;
+                            }
+                        }
+                    }
+                }
+            }
+        }        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

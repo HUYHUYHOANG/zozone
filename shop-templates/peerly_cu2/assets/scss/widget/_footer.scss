@@ -1,0 +1,66 @@
+/*--
+/*  5.2 - Footer Widget CSS
+/*----------------------------------------*/
+
+// Footer Widget Area
+.footer-widget-wrapper {
+    padding-top: 20px;
+}
+
+// Footer Widget
+.footer-widget {
+    margin-top: 40px;
+
+    & .widget-title{
+        font-size: 28px;
+        font-weight: 600;
+        color: $primary;
+        letter-spacing: 1px;
+    }
+}
+
+.footer-widget-info{}
+
+.single-widget-info{
+    padding-top: 15px;
+
+    & .title{
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $body-font;
+        color: $dark;
+        padding-bottom: 4px;
+    }
+    & p{}
+}
+
+.footer-widget-link{
+    padding-top: 5px;
+    
+    & ul{
+        & li{
+            margin-top: 10px;
+
+            & a{}
+        }
+    }
+}
+.footer-widget-book{
+    padding-top: 25px;
+    
+    & .book-title{
+        font-size: 20px;
+        font-weight: 700;
+        color: $primary;
+    }
+    & p{
+        font-size: 22px;
+        font-weight: 700;
+        color: $dark;
+    }
+}
+
+
+
+
+

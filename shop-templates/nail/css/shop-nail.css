@@ -1,0 +1,320 @@
+/** ===========================================================
+===============================================================*/
+.classic-theme-color{color:var(--classic-color-1) !important;}
+.classic-font-and-color{color:var(--classic-color-1) !important;}
+/** ===========================================================
+==== HEADER & FOOTER ===================================================*/
+
+.header-nav .nav>li>a{font-size:18px;}
+.header-nav .nav>li .sub-menu{padding-top:0;padding-bottom:0;border-top:0;}
+.header-nav .nav>li .sub-menu li a{font-size:20px;padding-top: 4px;padding-bottom: 4px;}
+
+.header-nav .nav>li:hover>a, .header-nav .nav>li.active>a, h6 a:hover, .item-info-in li a:hover, li.btn a:hover,
+.header-nav .nav>li .sub-menu li a:hover{
+    color:var(--classic-color-1) !important;
+}
+
+.header-nav .nav>li.li-booking.active a{color:#FFF !important;}
+
+footer a, footer a:visited {
+    color: #000;font-size:20px;
+}
+footer a:hover{
+    color: var(--classic-color-1) !important;
+}
+
+.logo-footer>a img, .logo-header>a img{width:auto;max-height: 85px;}
+.dzcategory-info, .dzfooter-info li{font-size:20px;}
+button.site-button, a.site-button{
+    background-color: var(--classic-color-1) !important;    
+    border:none;
+}
+
+.header-transparent .is-fixed .main-bar {
+    background-color: rgba(40,40,40,.7);
+}
+
+.dzopen-hour-list li span{float:right;}
+.right-ft-link{
+    font-weight: normal;
+    font-size: 20px;
+    margin-right: 12px;
+    color:#000;
+}
+.right-ft-link:hover{color: var(--classic-color-1);}
+.dzbottom-line{margin-top:20px;padding-bottom:20px;}
+
+/** ===========================================================
+==== customized font size, etc.. ===================================================*/
+.no-margin{margin-left:0;margin-right:0;}
+h2.category-name{padding:50px 0;}
+.bridal-head h2{font-size:100px;margin-top:30px;}
+.bridal-head h5{font-size:40px;}
+.dzcategory-info, .dzfooter-info li {
+    font-size: 20px;
+}
+.spa-price-tbl li .spa-price-content h4{
+    font-size:20px;
+    font-weight: 100;
+}
+.spa-price-content h4 a{font-size: 24px;}
+.item-title{font-size:24px;font-weight: normal;}
+.item-price, .item-price del {
+    color:#232323;
+    font-size: 20px;font-weight: 100;    
+}
+.item-price del{
+    font-weight: 500; 
+    opacity: .7;
+    margin-right: 6px;
+}
+
+.spa-about-content p{font-size: 20px;}
+.spa-price-tbl li .spa-price-content p{font-size: 18px;}
+
+del{opacity: .7;}
+
+.dzcategory-info, .dzfooter-info li{
+    font-size:20px;
+}
+
+
+.item-info-in i{font-size:30px;}
+
+.item-info-content p{font-size: 20px;}
+.item-info-price del, .item-info-price span{
+    color:#232323;
+    font-size:28px;
+    white-space: nowrap !important;
+    font-weight: 600;
+}
+
+.item-extras-info{
+    margin-top:20px;
+}
+.item-extras-info ul{
+    list-style-type:none;
+}
+.item-extras-info ul li{
+    padding-left:20px;
+}
+.item-extras-info ul li:first-child{padding-left:0;}
+
+.spa-price-tbl li .item-info-in{
+    height: 100%;
+    top:0;bottom:100%;width:95%;
+}
+.spa-price-tbl li:hover .item-info-in{
+    opacity:1;bottom:30%;
+}
+
+.bridal-portfolio .overlay-bx{padding:0;}
+.spa-port-bx{
+    background:linear-gradient(45deg,rgba(255,94,165,.8) 5%,rgba(0,190,207,.8) 100%) !important;
+    display:table !important;
+    opacity:.7;		
+    width:100%;		
+}
+.spa-port-bx > div{
+    display:table-cell;vertical-align:middle;
+}
+
+#map_canvas { height: 400px; }
+
+a.site-buton.close{font-size:22px;line-height:22px;cursor:pointer;opacity:.8;color:#000 !important;margin-top:-6px !important; }
+.modal-header{background:#b1a684 !important;}
+.modal-content{border-radius:4px !important;}
+
+/** ===========================================================
+==== flag icon ===================================================*/
+.dzlang-menu-btn {
+    color:#Fff;
+}
+.dzlang-menu {
+    /*position: absolute;
+    top:26px;*/
+    webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.dzlang-menu .site-button, .dzlang-menu .site-button:hover{background-color:transparent;}
+.dzlang-menu .site-button:hover a{color: var(--classic-color-1);}
+.dzlang-menu-content {
+    display: none;
+    position: absolute;    
+    background-color:#FFF;
+    min-width: 160px;    
+    z-index: 1;
+}	
+.dzlang-menu-content a {
+    padding: 6px 0 6px 20px;
+    text-decoration: none;
+    display: block;
+    color:#000;
+}	
+.dzlang-menu-content a:hover{color:var(--classic-color-1)}
+
+.dzlang-menu:hover .dzlang-menu-content {display: block;}
+
+.dzlang-menu-content a:before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-repeat: no-repeat;    
+}
+
+.dzlang-menu .flag-selected{
+    align-items: center;
+    cursor: pointer;
+    display: flex;    
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    background-repeat: no-repeat;
+}
+.dzlang-menu .flag-selected:before {
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    flex: 0 0 24px;
+    height: 24px;    
+    margin-right:6px;
+    position:relative;
+    top:3px;
+    width: 24px;
+}
+
+.flag-de:before {
+    background: url(../images/flag/germany.png) no-repeat;
+}
+
+.flag-Turkish::before{
+    background: url(../images/flag/turkey.png) no-repeat;
+}
+
+.flag-English:before
+{
+    background: url(../images/flag/united-kingdom.png) no-repeat;  
+}
+.flag-French:before
+{
+    background: url(../images/flag/france.png) no-repeat;
+}
+.flag-German:before
+{
+    background: url(../images/flag/germany.png) no-repeat;
+}
+.flag-Japanese:before
+{
+    background: url(../images/flag/japan.png) no-repeat;
+}
+.flag-Polish:before
+{
+    background: url(../images/flag/poland.png) no-repeat;
+}
+.flag-Russian:before
+{
+    background: url(../images/flag/russia.png) no-repeat; 
+}
+.flag-Spanish:before
+{
+    background: url(../images/flag/spain.png) no-repeat;
+}
+.flag-Vietnamese:before
+{
+    background: url(../images/flag/vietnam.png) no-repeat;
+}
+.flag-Italian:before
+{
+    background: url(../images/flag/Italy.png) no-repeat;
+}
+.flag-Swedish:before
+{
+    background: url(../images/flag/swedish.png) no-repeat;    
+}
+
+@media (min-width: 992px) {    
+    .is-fixed .dzlang-menu {/*top:40%;*/position: relative;top:-4px;}
+    .logo-header{height:96px;}
+    .is-fixed .logo-header{height:87px;padding:4px 0;}
+    
+    .bridal-head h2{margin-bottom:45px;margin-top:10px;}
+}
+
+@media (max-width: 991px) {    
+    .dzlang-menu{right:0px;top:45%;}
+    .dzlang-menu-content{padding-top: 6px;}
+    .dzlang-menu-content a {
+        padding: 2px 0 2px 6px;    
+        text-align: left;
+    }
+    .radius-no{padding:0 6px;}
+    .site-button{background:transparent !important;}
+    .site-button:active,.site-button:hover,.site-button:focus,.active > .site-button{
+        background:#b1a684 !important;
+    }
+    h2.category-name, .spa-price-bx .section-head h2{font-size:25px !important;}
+
+    .mo-left .header-nav .logo-header img{
+        max-height:85px !important;
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+        border: none;
+    }    
+}
+
+@media only screen and (min-width: 767px) and (max-width:992px){
+    .navbar-toggler{margin-top:40px;float:right}
+    .is-fixed .navbar-toggler{margin-top:40px !important;}
+}
+
+@media only screen and (max-width: 767px){
+    .logo-header, .is-fixed .logo-header{/*height:56px !important;padding-bottom:0;*/}
+    .logo-header>a img{max-height: 56px !important;}
+    .navbar-toggler{margin:20px 0 0px 10px !important;}
+    .navicon{height: 10px;}
+    .is-fixed .navbar-toggler{margin:24px 0 0px 10px !important;}
+    .is-fixed .dzlang-menu{margin-top:4px !important;}
+    /*.dzlang-menu{right:-20px;top:50%;}
+    .dzlang-menu-content{padding-top: 6px;}*/
+    .spa-header .site-button {
+        padding: 0 6px;
+    }
+    .dzlang-menu-content a{padding-left:6px;}
+    .bridal-head h2 {
+        font-size: 40px !important;
+        line-height: 50px;
+    }
+}
+@media (max-width: 480px) {    
+    .dzlang-menu{right:50%;top:50%;}
+
+    .spa-price-content i{display: none;}
+    .spa-price{white-space:nowrap;}
+    del.spa-price, span.spa-price{
+        display: block;
+        float:right;
+        margin-left:6px !important;
+        position: relative;
+    }
+
+    del.spa-price.xs-pos{right:-27%;}
+    span.spa-price.xs-pos{bottom:-30px;}
+
+    
+}
+
+@media (max-width: 406px){
+    .flex-fill{min-width: 60px !important;}
+}
+
+@media (min-width: 1024px){
+    .col-xs-6.btn{max-width: 100px !important;}
+}

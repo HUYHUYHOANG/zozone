@@ -1,0 +1,338 @@
+/*--
+/*  4.16 - Blog Details CSS
+/*----------------------------------------*/
+
+.blog-details{
+    margin-top: 30px;
+
+    & .details-images{
+        & img{
+            width: 100%;
+            border-radius: 46px;
+
+            @media #{$desktop-device}{
+                border-radius: 36px;
+            }
+            @media #{$large-mobile}{
+                border-radius: 25px;
+            }
+        }
+    }
+    & .meta{
+        display: flex;
+        padding-top: 28px;
+
+        & a{
+            font-size: 16px;
+            font-weight: 400;
+            color: $primary;
+            text-transform: uppercase;
+            margin-right: 15px;
+
+            & i{
+                margin-right: 5px;
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    & .title{
+        font-size: 50px;
+        font-weight: 700;
+        color: $dark;
+        margin-top: 20px;
+        line-height: 1.2;
+
+        @media #{$desktop-device}{
+            font-size: 40px;
+        }
+        @media #{$tablet-device}{
+            font-size: 42px;
+        }
+        @media #{$large-mobile}{
+            font-size: 30px;
+        }
+        @media #{$small-mobile}{
+            font-size: 22px;
+        }
+    }
+    & .text{
+        font-size: 20px;
+        font-weight: 700;
+        color: $primary;
+        margin-top: 20px;
+
+        @media #{$small-mobile}{
+            font-size: 16px;
+        }
+    }
+    & p{
+        margin-top: 15px;
+    }  
+    & ul{
+        padding-top: 15px;
+
+        & li{
+            margin-top: 30px;
+            padding-left: 35px;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: '';
+                top: 4px;
+                left: 0px;
+                width: 20px;
+                height: 20px;
+                background-image: url(../images/dots.webp);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }  
+}
+
+// Blog Desc
+.blog-desc-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    & .desc-col-1{
+        width: 49%;
+        padding: 0 20px;
+    }
+    & .desc-col-2{
+        width: 51%;
+        padding: 0 20px;
+    }
+}
+
+
+// Blog Desc
+.blog-desc{
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: rgb(219, 219, 219);
+    box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.13);
+    margin-top: 45px;
+
+    & img{
+        width: 100%;
+    }      
+
+    & .video-play{
+        font-size: 14px;
+        font-weight: 700;
+        color: $primary;
+        letter-spacing: 1px;
+        position: absolute;
+        bottom: 20px;
+        right: 25px;
+
+        @media #{$large-mobile}{
+            font-size: 16px;
+        }
+        
+        & .icon{
+            width: 30px;
+            height: 30px;
+            line-height: 24px;
+            border: 3px solid $primary;
+            border-radius: 50%;
+            font-size: 9px;
+            color: $primary;
+            display: inline-block;
+            text-align: center;
+            margin-right: 6px;
+        }
+    }
+}
+
+// Blog tags & Social
+.blog-tags-social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #ffe9da;
+    margin-top: 30px;
+}
+
+.blog-tags{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+    & .title{
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 8px;
+    }
+    & ul{
+        display: flex;
+        flex-wrap: wrap;
+
+        & li{
+            margin-left: 3px;
+        }
+    }
+}
+
+.blog-social{
+    padding-left: 70px;
+    position: relative;
+    margin-top: 15px;
+
+    &::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 70px;
+        height: 2px;
+        background-color: $primary;
+    }
+
+    & a{
+        font-size: 18px;
+        color: $primary;
+        margin-left: 20px;
+    }
+}
+
+
+// Blog Comments
+.blog-comments{
+    & .comment-title{
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+
+// Blog Comments Items & Form
+.blog-comments-items,
+.blog-comments-form{
+    margin-top: 60px;
+
+    @media #{$large-mobile}{
+        margin-top: 40px;
+    }
+}
+.comments-items{
+    & li{
+        margin-top: 70px;
+
+        @media #{$large-mobile}{
+            margin-top: 45px;
+        }
+    }
+}
+.comments-reply{
+    padding-left: 125px;
+
+    @media #{$large-mobile}{
+        padding-left: 0;
+    }
+}
+
+// Single Comment 
+.single-comment{
+    display: flex;
+
+    @media #{$small-mobile}{
+        display: block;
+    }
+
+    & .comment-thumb{}
+    & .comment-content{
+        flex: 1;
+        padding-left: 25px;
+
+        @media #{$small-mobile}{
+            padding-left: 0;
+            padding-top: 10px;
+        }
+
+        & .title{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: -6px;
+
+            & > *{
+                @media #{$small-mobile}{
+                    margin-top: 10px;
+                }
+            }
+
+            & .name{
+                font-size: 20px;
+                font-weight: 700; 
+                position: relative;
+                padding-right: 30px;
+
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 1px;
+                    height: 15px;
+                    background-color: $primary;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 15px;
+                }
+            }
+
+            & span{
+                font-size: 14px;
+                font-weight: 400;
+                color: $primary;
+                text-transform: uppercase;
+                position: relative;
+                margin-right: 25px;               
+
+                & i{
+                    margin-right: 5px;
+                }
+            }
+        }
+        & p{
+            margin-top: 5px;
+        }
+        & .reply{
+            margin-top: 5px;
+            color: $primary;
+            font-size: 14px;
+        }
+    }
+}
+
+// Comment Form
+.comments-form{
+    padding-top: 20px;
+
+    & .btn{
+        @media #{$extraBig-device, $laptop-device, $desktop-device}{
+            padding: 0 40px;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+

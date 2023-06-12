@@ -1,0 +1,104 @@
+/*--
+/*  4.17 - Shop CSS
+/*----------------------------------------*/
+
+// Shop Wrapper 
+.shop-wrapper{
+    margin-top: -30px;
+}
+
+// Single Product 
+.single-product{
+    border: 1px solid $primary;
+    border-radius: 17px;
+    background-color: rgb(255, 249, 245);
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+
+    @media #{$desktop-device, $large-mobile}{
+        padding: 15px;
+    }
+
+    & .shape{
+        position: absolute;
+        bottom: -28px;
+        right: -15px;
+        opacity: 0.3;
+    }
+    
+    & .product-image{
+        border-radius: 14px;
+        overflow: hidden;
+
+        & a{
+            display: block;
+
+            & img{
+                width: 100%;
+                transition: $transition-default;
+            }
+        }
+    }
+    & .product-content{
+        padding-top: 18px;
+
+        & .title{
+            color: $primary;
+            font-size: 28px;
+            font-weight: 700;
+
+            @media #{$desktop-device}{
+                font-size: 22px;
+            }
+            @media #{$large-mobile}{
+                font-size: 20px;
+            }
+
+            & a{
+                &:hover{
+                    color: $dark;
+                }
+            }
+        }
+        & .price-rating{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            & span{
+                color: #6b6b6b;
+                font-size: 16px;
+                margin: 0 10px;
+            }
+            & .price{}
+            & .rating{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

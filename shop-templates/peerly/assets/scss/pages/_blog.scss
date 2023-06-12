@@ -1,0 +1,149 @@
+/*--
+/*  4.9 - Blog CSS
+/*----------------------------------------*/
+
+// Blog Wapper
+.blog-wrapper{
+    margin-top: -30px;
+}
+
+// Blog Wapper 02
+.blog-wrapper-02{}
+
+// Blog Sidebar 
+.blog-sidebar-title{
+    margin-top: 30px;
+
+    & .section-title{
+        & .title{
+            display: inline;
+            position: relative;
+            z-index: 1;
+
+            & .shape{
+                position: absolute;
+                top: 46%;
+                transform: translateY(-50%);
+                right: -70px;
+                z-index: -1;
+            }
+        }
+    }
+    & .text{
+        font-size: 20px;
+        font-weight: 700;
+        color: $heading-color;
+        max-width: 320px;
+        margin-top: 20px;
+    }
+    
+    & .btn{
+        margin-top: 42px;
+    }
+}
+
+
+// Single Blog 
+.single-blog{
+    border: 1px solid $primary;
+    border-radius: 20px;
+    background-color: rgb(255, 249, 245);
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    transition: $transition-default;
+    margin-top: 30px;
+
+    @media #{$small-mobile}{
+        padding: 15px;
+    }
+
+    & .shape{
+        position: absolute;
+        bottom: -17px;
+        right: -15px;
+        opacity: 0.3;
+    }
+    
+    & .blgo-image{
+        border-radius: 20px;
+        overflow: hidden;
+
+        & a{
+            display: block;
+
+            & img{
+                border-radius: 20px;
+                width: 100%;
+            }
+        }
+    }
+    & .blgo-content{
+        padding-top: 20px;
+
+        & .meta{
+            display: flex;
+
+            & li{
+                margin-right: 15px;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                & a{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $primary;
+                    text-transform: uppercase;
+
+                    & i{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        & .title{
+            font-size: 28px;
+            font-weight: 700;
+            color: $dark;
+            line-height: 1.4;
+            margin-top: 6px;
+
+            @media #{$desktop-device, $small-mobile} {
+                font-size: 22px;
+            }
+            @media #{$tablet-device}{
+                font-size: 24px;
+            }
+        }
+    }
+
+    &:hover{
+        box-shadow: 0px 21px 32px 0px rgba(0, 0, 0, 0.13);
+                  
+        & .blgo-image{    
+            & a{
+                & img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        & .blgo-content{    
+            & .meta{    
+                & li{   
+                    & a{
+                        color: $dark;
+                    }
+                }
+            }
+            & .title{
+                
+            }
+        }
+    }
+}
+
+
+
+

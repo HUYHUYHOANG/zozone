@@ -1,0 +1,65 @@
+/*--
+/*  4.5 - Why Choose CSS
+/*----------------------------------------*/
+
+// Choose Wrapper 
+.choose-wrapper{}
+
+
+// Single Choose
+.single-choose{
+    margin-top: 55px;
+
+    & .title{
+        font-size: 20px;
+        font-weight: 600;
+        color: $primary;
+        letter-spacing: 1px;
+    }
+    & p{
+        margin-top: 8px;
+    }
+}
+
+// Choose Image 
+.choose-image{    
+    margin-top: 60px;
+    
+    @media #{$extraBig-device, $laptop-device}{
+        padding: 0 50px;
+    }
+    
+    & .image{
+        position: relative;
+
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/why-chose.webp);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        & img{
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

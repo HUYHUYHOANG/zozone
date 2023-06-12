@@ -1,0 +1,29 @@
+[2023-04-04 06:00:02] Shop 1, param [booking_reminder_msg_template = 0] invalid
+[2023-04-04 06:00:02] Shop ID: 1 [send_email_cron_job] not found...
+[2023-04-04 06:00:02] serviceComingUpReminder() : shopId : 2 - 0 emails sent...
+[2023-04-04 06:00:02] Setting: last-activity 
+[2023-04-04 06:00:02] Send to <b>bb@gmail.com</b> : OK
+[2023-04-04 06:00:03] Send to <b>Duc@gmail.com</b> : OK
+[2023-04-04 06:00:03] Send to <b>duyenpham@gmail.com</b> : OK
+[2023-04-04 06:00:04] Send to <b>hang@gmail.com</b> : OK
+[2023-04-04 06:00:04] Send to <b>hue@gmail.com</b> : OK
+[2023-04-04 06:00:04] Send to <b>kieu@gmail.com</b> : OK
+[2023-04-04 06:00:05] Send to <b>Lien@gmail.com</b> : OK
+[2023-04-04 06:00:05] Send to <b>man@gmail.com</b> : OK
+[2023-04-04 06:00:05] Send to <b>tin@gmail.com</b> : OK
+[2023-04-04 06:00:06] Send to <b>Phong@gmail.com</b> : OK
+[2023-04-04 06:00:06] Send to <b>thien@gmail.com</b> : OK
+[2023-04-04 06:00:06] Send to <b>tram@gmail.com</b> : OK
+[2023-04-04 06:00:07] Send to <b>trong@gmmail.com</b> : OK
+[2023-04-04 06:00:08] Send to <b>tt@gmail.com</b> : OK
+[2023-04-04 06:00:08] Send to <b>Uyen@gmail.com</b> : OK
+[2023-04-04 06:00:08] serviceComingUpReminder() : shopId : 4 - 0 emails sent...
+[2023-04-04 06:00:08] Shop ID: 4 [send_email_cron_job] not found...
+[2023-04-04 06:00:08] Shop 5, param [booking_reminder_msg_template = 0] invalid
+[2023-04-04 06:00:08] Shop ID: 5 [send_email_cron_job] not found...
+[2023-04-04 06:00:08] serviceComingUpReminder() : shopId : 6 - 0 emails sent...
+[2023-04-04 06:00:08] Setting: all 
+[2023-04-04 06:00:08] Shop 7, param [booking_reminder_msg_template = 0] invalid
+[2023-04-04 06:00:08] Shop ID: 7 [send_email_cron_job] not found...
+[2023-04-04 06:00:08] Shop 8, param [booking_reminder_msg_template = 0] invalid
+[2023-04-04 06:00:08] Shop ID: 8 [send_email_cron_job] not found...

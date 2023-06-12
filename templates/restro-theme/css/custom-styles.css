@@ -1,0 +1,64 @@
+
+body{font-family: Barlow Semi Condensed,nunito, helveticaneue, helvetica neue, Helvetica, Arial, sans-serif !important;}
+a.button:hover{color:#FFF; text-decoration: none;}
+
+/*input, textarea, button*/
+textarea{
+    line-height: 36px !important;    
+    font-weight: 500 !important;
+    border:none !important;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 12%) !important;    
+}
+/*disabled input*/
+input[type='text']:disabled,
+textarea:disabled,
+button:disabled,
+a.button.disabled{
+    background:#f8f8f8 !important;
+    color:gray;
+    cursor: default;        
+}
+
+/*sweetalert*/
+.swal-button{min-width:100px;}
+
+/*pagination*/
+
+.pagination{display: inline-block;list-style-type: none;margin: 0;padding: 0;}
+.pagination li{display: inline-block;margin:2px;}
+.pagination li a{
+    padding: 6px 12px;
+    cursor: default;
+}
+.pagination li:not(.disabled):hover a, .pagination li.active a{
+    background-color: var(--classic-color-1);
+    color: white !important;
+    cursor: pointer;
+}
+.pagination li.active a{cursor: default !important;} 
+.pagination li.disabled a i{color:#ccc}
+.pagination li a i{font-size:20px;color:#666;font-weight: 100;position:relative;top:3px;}
+
+/*fix caret css isse*/
+.dropup .dropdown-toggle::after,.dropdown-toggle::after{display: none;}
+.bootstrap-select .dropdown-toggle::after{display: none !important;}
+/*disahboard*/
+.dashboard-nav-inner ul li a{font-weight: normal;
+    font-family: Barlow Semi Condensed,nunito, helveticaneue, helvetica neue, Helvetica, Arial, sans-serif;}
+.dashboard-nav-inner ul li a:hover{text-decoration: none;}
+.dashboard-nav-inner ul li a svg.svg-dashboard-nav {top:0px}
+.user-menu-small-nav li a svg.svg-dashboard-nav-small{position:relative;top:-2px;}
+
+/*loading styles*/
+.popup-tabs-container.loading{height:200px;width:100%;background:#FFF url(../images/loading.svg.php) no-repeat center center !important;}    
+.loading{height:100px;width:100%;background:#FFF url(../images/loading.svg.php) no-repeat center center !important;}
+button.ajxloading, a.ajxloading{box-shadow:none;background-color:#FFF;background:url(../images/loading.svg.php) no-repeat center center !important;}
+button.ajxloading i, button.ajxloading span{
+    display:none;
+}
+a.ajxloading i::before{content:'';}
+
+/*input error*/
+.input-error{border:1px solid #F00 !important;}
+
+.hdrCustName{color:var(--classic-color-1);}
